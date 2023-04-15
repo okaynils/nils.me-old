@@ -92,6 +92,7 @@ p {
 ul li {
 	margin-bottom: 32px;
 }
+
 ul li:last-of-type {
 	margin-bottom: 0;
 }
@@ -162,4 +163,26 @@ a:hover {
 a {
   -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
   transition: color 1s; /* For modern browsers */
+}
+
+.artist-box {
+	background-color: rgb(19, 19, 19);
+	padding: 20px;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+.artist-li {
+	border-radius: 5px;
+	margin-bottom: 5px;
+	-webkit-transition: background-color 1s; /* For Safari 3.0 to 6.0 */
+  	transition: background-color 1s; /* For modern browsers */
+}
+
+.artist-div {
+	padding: 10px;
+}
+
+.artist-li:hover {
+	background-color: rgb(72, 52, 160);
 }

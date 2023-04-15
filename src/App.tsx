@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Artists from './components/Artists';
 
 function App() {
   return (
@@ -51,11 +52,11 @@ function App() {
         </div>
 
         <div className="section">
-          <h6>What I listen to</h6>
+          <h6>What I'm currently listening to</h6>
 
           <ul>
             <li>
-              <iframe title="spotify-playlist" style={{ border: "none", height: "80px" }} src="https://open.spotify.com/embed/playlist/2BBUxWdHKMExzpoZLZnsX7?utm_source=generator&theme=0" width="100%" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <Artists />  
             </li>
           </ul>
         </div>
