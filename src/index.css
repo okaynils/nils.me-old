@@ -1,13 +1,165 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body {
+  background: #000;
+  -webkit-font-smoothing: antialiased;
+}
+a {
+	color: inherit;
+}
+a:hover {
+	text-decoration: underline;
+}
+#content {
+	max-width: 512px;
+	margin: 0 auto;
+	padding: 64px 24px;
+}
+.section {
+	padding-bottom: 48px;
+	margin-bottom: 48px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+.section:last-of-type {
+	border-bottom: 0;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+.me {
+	width: 65px;
+	height: 90px;
+    margin-bottom: 12px;
+    background-image: url('./assets/images/memoji.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+h1 {
+	font-weight: 600;
+	font-size: 24px;
+	color: #FFFFFF;
+	margin-bottom: 12px;
+}
+h2 {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	color: rgba(255, 255, 255, 0.8);
+	margin-bottom: 16px;
+}
+.link {
+	font-size: 16px;
+	line-height: 20px;
+	color: #fff;
+	margin-right: 12px;
+}
+.links .link {
+	margin-right: 0;
+	display: block;
+	margin-bottom: 16px;
+}
+h6 {
+	font-weight: 600;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.64);
+	margin-bottom: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+h3 {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 24px;
+	color: #FFFFFF;
+	margin-bottom: 6px;
+}
+p {
+	font-size: 18px;
+	line-height: 24px;
+	color: rgba(255, 255, 255, 0.8);
+}
+ul li {
+	margin-bottom: 32px;
+}
+ul li:last-of-type {
+	margin-bottom: 0;
+}
+
+.grey-word {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tooltip container */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+	visibility: hidden;
+	width: 16em;
+	
+	/* margin-left: 6em; Use half of the width (120/2 = 60), to center the tooltip */
+	background-color: rgb(69, 69, 69);
+	color: rgba(255, 255, 255, 0.8);;
+	text-align: center;
+	font-size: small;
+	padding: 5px 0;
+	border-radius: 6px;
+   
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+  }
+
+  .tooltip .tooltiptext::after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;  /* At the top of the tooltip */
+	left: 5%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent rgb(69, 69, 69) transparent;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+	visibility: visible;
+  }
+
+  /* Footer Sect */
+  .footer-section {
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .left-text {
+	float: left;
+  }
+  
+  .right-text {
+	float: right;
+  }
+
+a:hover {
+  text-decoration: none;
+  color: rgb(72, 52, 160)
+}
+
+a {
+  -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
+  transition: color 1s; /* For modern browsers */
 }
