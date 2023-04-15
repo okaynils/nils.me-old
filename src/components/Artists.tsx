@@ -8,7 +8,7 @@ const Artists = () => {
     const [artists, setArtists] = useState([]);
 
     useEffect(() => {
-        fetch(`http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${lastfmUsername}&api_key=${lastfmApiKey}&format=json&limit=5&period=7day`)
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${lastfmUsername}&api_key=${lastfmApiKey}&format=json&limit=5&period=7day`)
             .then(res => res.json())
             .then(
                 (data) => {
