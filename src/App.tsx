@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -21,7 +20,7 @@ function App() {
               <p style={{ fontSize: "small" }}>2022 - Present</p>
               <a href="https://fhnw.ch/en/degree-programmes/engineering/bsc-data-science">
                 <div className="tooltip" style={{ display: "inline-block" }}>
-                  <h3><a>FHNW</a></h3>
+                  <h3><a href="https://fhnw.ch/en/degree-programmes/engineering/bsc-data-science">FHNW</a></h3>
                   <span className="tooltiptext">University of Applied Sciences Northwestern Switzerland</span>
                 </div>
               </a>
@@ -37,7 +36,7 @@ function App() {
               <p style={{ fontSize: "small" }}>2021 - 2022</p>
               <a href="https://www.wksbern.ch/de">
                 <div className="tooltip" style={{ display: "inline-block" }}>
-                  <h3><a>WKS Bern</a></h3>
+                  <h3><a href="https://www.wksbern.ch/de">WKS Bern</a></h3>
                   <span className="tooltiptext">School for Business and Management Bern</span>
                 </div>
               </a>
@@ -56,7 +55,7 @@ function App() {
 
           <ul>
             <li>
-              <iframe style={{ border: "none", height: "80px" }} src="https://open.spotify.com/embed/playlist/2BBUxWdHKMExzpoZLZnsX7?utm_source=generator&theme=0" width="100%" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <iframe title="spotify-playlist" style={{ border: "none", height: "80px" }} src="https://open.spotify.com/embed/playlist/2BBUxWdHKMExzpoZLZnsX7?utm_source=generator&theme=0" width="100%" allowFullScreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </li>
           </ul>
         </div>
