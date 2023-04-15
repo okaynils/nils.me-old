@@ -23,11 +23,9 @@ const Artists = () => {
     }, [])
     if (error) {
         return error
-
     } else if (!isLoaded) {
         return <div>Loading artists...</div>;
     } else {
-        console.log(artists)
         return (
             <div className="artist-box">
                 <ul>
