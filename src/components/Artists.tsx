@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { lastfmApiKey, lastfmUsername } from "../api/config";
+import { lastfmApiKey, lastfmTimePeriod, lastfmUsername } from "../api/config";
 
 const Artists = () => {
 
@@ -8,7 +8,7 @@ const Artists = () => {
     const [artists, setArtists] = useState([]);
 
     useEffect(() => {
-        fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${lastfmUsername}&api_key=${lastfmApiKey}&format=json&limit=5&period=7day`)
+        fetch(`https://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=${lastfmUsername}&api_key=${lastfmApiKey}&format=json&limit=5&period=${lastfmTimePeriod}`)
             .then(res => res.json())
             .then(
                 (data) => {
