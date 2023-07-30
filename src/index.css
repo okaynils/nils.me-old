@@ -161,8 +161,8 @@ a:hover {
 }
 
 a {
-  -webkit-transition: color 1s; /* For Safari 3.0 to 6.0 */
-  transition: color 1s; /* For modern browsers */
+  -webkit-transition: color .5Ss; /* For Safari 3.0 to 6.0 */
+  transition: color .5s; /* For modern browsers */
 }
 
 .artist-box {
@@ -175,8 +175,8 @@ a {
 .artist-li {
 	border-radius: 5px;
 	margin-bottom: 5px;
-	-webkit-transition: background-color 1s; /* For Safari 3.0 to 6.0 */
-  	transition: background-color 1s; /* For modern browsers */
+	-webkit-transition: background-color .5s; /* For Safari 3.0 to 6.0 */
+  	transition: background-color .5s; /* For modern browsers */
 }
 
 .artist-div {
@@ -185,4 +185,8 @@ a {
 
 .artist-li:hover {
 	background-color: rgb(72, 52, 160);
+}
+
+.X {
+	font-size: large;
 }

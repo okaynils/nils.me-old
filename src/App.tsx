@@ -9,9 +9,9 @@ function App() {
         <div className="section">
           <div className="me"></div>
           <h1>Nils Fahrni</h1>
-          <h2>sentient machine</h2>
+          <h2>effective accelerationist</h2>
 
-          <a href="https://twitter.com/okaynils" className="link">Twitter -&gt;</a><a href="https://instagram.com/okaynils" className="link">Instagram -&gt;</a><a href="https://github.com/okaynils" className="link">GitHub -&gt;</a>
+          <a href="https://twitter.com/okaynils" className="link"><span className="X">𝕏</span> -&gt;</a><a href="https://github.com/okaynils" className="link">GitHub -&gt;</a><a href="https://instagram.com/okaynils" className="link">Instagram -&gt;</a>
         </div>
         <div className="section">
           <h6>Currently</h6>
