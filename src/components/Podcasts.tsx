@@ -9,21 +9,22 @@ const Podcasts = () => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [podcasts, setPodcasts] = useState<Podcast[]>([]);
-    
-    const client = new ApolloClient({
-        uri: 'https://api.taddy.org/',
-        cache: new InMemoryCache(),
-        headers: {
-            "X-API-Key": taddyApiKey.toString(),
-            "X-USER-ID": taddyUserId.toString()
-        },
-    });
 
     useEffect(() => {
+        const client = new ApolloClient({
+            uri: 'https://api.taddy.org/',
+            cache: new InMemoryCache(),
+            headers: {
+                "X-API-Key": taddyApiKey.toString(),
+                "X-USER-ID": taddyUserId.toString()
+            },
+        });
+
         client.query({
             query: GET_PODCASTS_QUERY
         })
-        .then((result) => setPodcasts(Object.values(result["data"])));
+        .then((result) => setPodcasts(Object.values(result["data"])))
+        .catch((error) => setError(error));
         setIsLoaded(true);
     }, []);
     
