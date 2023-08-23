@@ -36,15 +36,37 @@ a:hover {
 	padding-bottom: 0;
 	margin-bottom: 0;
 }
+
 .me {
-	width: 65px;
-	height: 90px;
+    position: relative;
+    width: 75px;
+    height: 75px;
+    margin-bottom: 12px;
+    background-image: url('./assets/images/memoji.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transition: all 0.7s ease;
+}
+
+.me {
+    position: relative;
+    width: 75px;
+    height: 75px;
     margin-bottom: 12px;
     background-image: url('./assets/images/memoji.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
 }
+
+.me:hover {
+    background-image: url('./assets/images/profile_picture.jpg'); 
+	transition: background-image 0.7s ease;
+	border-radius: 100%;
+}
+
+
 h1 {
 	font-weight: 600;
 	font-size: 24px;
@@ -190,3 +212,38 @@ a {
 .X {
 	font-size: large;
 }
+
+.loading {
+	color: white;
+}
+
+.cover-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between covers if needed */
+}
+
+.cover-item {
+    flex: 1;
+    max-width: 200px; /* Adjust the max-width to your preferred size */
+}
+
+.cover-image {
+	border-radius: 6px;
+}
+
+.cover-item img {
+    width: 100%;
+    height: auto;
+}
+
+.cover-item p {
+    margin-top: 10px; /* Adjust the top margin if needed */
+}
+
+.podcastName {
+	font-size: 14px;
+	text-align: center;
+	line-height: 1.2;
+}
+

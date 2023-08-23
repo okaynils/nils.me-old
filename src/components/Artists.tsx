@@ -24,7 +24,7 @@ const Artists = () => {
     if (error) {
         return error
     } else if (!isLoaded) {
-        return <div>Loading artists...</div>;
+        return <div className="loading">Loading artists...</div>;
     } else {
         return (
             <div className="artist-box">

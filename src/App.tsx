@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Artists from './components/Artists';
+import Podcasts from './components/Podcasts';
 
 function App() {
   return (
@@ -52,13 +53,18 @@ function App() {
         </div>
 
         <div className="section">
-          <h6>What I'm currently listening to</h6>
+          <h6>Music I'm currently listening to</h6>
 
           <ul>
             <li>
               <Artists />  
             </li>
           </ul>
+        </div>
+
+        <div className="section">
+          <h6>My favorite podcasts</h6>
+          <Podcasts />
         </div>
 
         <div className="section footer-section">
