@@ -8,9 +8,9 @@ function App() {
     <div className="App">
       <div id="content">
         <div className="section">
-          <div className="me"></div>
           <h1>Nils Fahrni</h1>
-          <h2>effective accelerationist</h2>
+          <h2>I am dedicated Data Science undergraduate in my fourth semester at University of Applied Sciences Northwestern Switzerland.</h2>
+          <h2>I harbor a deep passion for machine learning and computer vision.</h2>
 
           <a href="https://twitter.com/okaynils" className="link"><span className="X">𝕏</span> -&gt;</a><a href="https://github.com/okaynils" className="link">GitHub -&gt;</a><a href="https://instagram.com/okaynils" className="link">Instagram -&gt;</a>
         </div>
@@ -23,7 +23,6 @@ function App() {
               <a href="https://fhnw.ch/en/degree-programmes/engineering/bsc-data-science">
                 <div className="tooltip" style={{ display: "inline-block" }}>
                   <h3><a href="https://fhnw.ch/en/degree-programmes/engineering/bsc-data-science">FHNW</a></h3>
-                  <span className="tooltiptext">University of Applied Sciences Northwestern Switzerland</span>
                 </div>
               </a>
               <p>BSc Data Science</p>
@@ -39,7 +38,6 @@ function App() {
               <a href="https://www.wksbern.ch/de">
                 <div className="tooltip" style={{ display: "inline-block" }}>
                   <h3><a href="https://www.wksbern.ch/de">WKS Bern</a></h3>
-                  <span className="tooltiptext">School for Business and Management Bern</span>
                 </div>
               </a>
               <p>Matura Student</p>
@@ -53,7 +51,7 @@ function App() {
         </div>
 
         <div className="section">
-          <h6>Music I'm currently listening to</h6>
+          <h6>Artists I'm currently listening to</h6>
 
           <ul>
             <li>
@@ -68,7 +66,7 @@ function App() {
         </div>
 
         <div className="section footer-section">
-          <p className="left-text" style={{ fontSize: "x-small" }}>Nils Fahrni © 2023</p>
+          <p className="left-text" style={{ fontSize: "x-small" }}>Nils Fahrni © { (new Date().getFullYear()) }</p>
           <p className="right-text" style={{ fontSize: "small" }}>🌿</p>
         </div>
       </div>

@@ -11,26 +11,40 @@ html { font-family: 'Inter', sans-serif; }
 	text-decoration: none;
 	box-sizing: border-box;
 }
+
 body {
-  background: #000;
+  background: #f3f3f3;
   -webkit-font-smoothing: antialiased;
 }
+
 a {
 	color: inherit;
 }
+
 a:hover {
 	text-decoration: underline;
 }
+
 #content {
-	max-width: 512px;
+	max-width: 728px;
 	margin: 0 auto;
-	padding: 64px 24px;
+	padding: 64px 0;
 }
+
+@media (max-width: 768px) {
+	#content {
+		max-width: 728px;
+		margin: 0px 20px;
+		padding: 24px 0;
+	}
+}
+
 .section {
 	padding-bottom: 48px;
 	margin-bottom: 48px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	border-bottom: 1px solid rgba(31, 31, 31, 0.12);
 }
+
 .section:last-of-type {
 	border-bottom: 0;
 	padding-bottom: 0;
@@ -70,47 +84,54 @@ a:hover {
 h1 {
 	font-weight: 600;
 	font-size: 24px;
-	color: #FFFFFF;
+	color: #000000;
 	margin-bottom: 12px;
 }
+
 h2 {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(8, 8, 8, 0.8);
 	margin-bottom: 16px;
 }
+
 .link {
 	font-size: 16px;
 	line-height: 20px;
-	color: #fff;
+	color: #0f523b;
 	margin-right: 12px;
 }
+
 .links .link {
 	margin-right: 0;
 	display: block;
 	margin-bottom: 16px;
 }
+
 h6 {
 	font-weight: 600;
 	font-size: 14px;
-	color: rgba(255, 255, 255, 0.64);
+	color: rgb(29, 29, 29);
 	margin-bottom: 24px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
+
 h3 {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 24px;
-	color: #FFFFFF;
+	color: #272727;
 	margin-bottom: 6px;
 }
+
 p {
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 24px;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgb(24, 24, 24);
 }
+
 ul li {
 	margin-bottom: 32px;
 }
@@ -120,48 +141,8 @@ ul li:last-of-type {
 }
 
 .grey-word {
-	color: rgba(255, 255, 255, 0.8);
+	color: rgb(44, 44, 44);
 }
-
-/* Tooltip container */
-.tooltip {
-	position: relative;
-	display: inline-block;
-}
-  
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-	visibility: hidden;
-	width: 16em;
-	
-	/* margin-left: 6em; Use half of the width (120/2 = 60), to center the tooltip */
-	background-color: rgb(69, 69, 69);
-	color: rgba(255, 255, 255, 0.8);;
-	text-align: center;
-	font-size: small;
-	padding: 5px 0;
-	border-radius: 6px;
-   
-	/* Position the tooltip text - see examples below! */
-	position: absolute;
-	z-index: 1;
-  }
-
-  .tooltip .tooltiptext::after {
-	content: " ";
-	position: absolute;
-	bottom: 100%;  /* At the top of the tooltip */
-	left: 5%;
-	margin-left: -5px;
-	border-width: 5px;
-	border-style: solid;
-	border-color: transparent transparent rgb(69, 69, 69) transparent;
-  }
-
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-	visibility: visible;
-  }
 
   /* Footer Sect */
   .footer-section {
@@ -179,7 +160,7 @@ ul li:last-of-type {
 
 a:hover {
   text-decoration: none;
-  color: rgb(72, 52, 160)
+  color: #0f523b;
 }
 
 a {
@@ -188,10 +169,11 @@ a {
 }
 
 .artist-box {
-	background-color: rgb(19, 19, 19);
+	background-color: #f0f0f0;
 	padding: 20px;
 	border-radius: 15px;
 	font-size: 16px;
+	border: #e9e9e9 1px solid;
 }
 
 .artist-li {
@@ -206,7 +188,7 @@ a {
 }
 
 .artist-li:hover {
-	background-color: rgb(72, 52, 160);
+	background-color: #c0c0c0;
 }
 
 .X {
@@ -214,13 +196,13 @@ a {
 }
 
 .loading {
-	color: white;
+	color: rgb(36, 36, 36);
 }
 
 .cover-container {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Adjust the gap between covers if needed */
+    justify-content: space-evenly;
+    gap: 30px;  /* Adjust the gap between covers if needed */
 }
 
 .cover-item {
@@ -246,4 +228,3 @@ a {
 	text-align: center;
 	line-height: 1.2;
 }
-
