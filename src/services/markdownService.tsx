@@ -11,14 +11,19 @@ interface FetchMarkdownListResult {
     error: string | null;
 }
 
-export const fetchMarkdown = async (fileName: string): Promise<FetchMarkdownResult> => {
+export const fetchMarkdown = async (fileName: string, fetchFrontmatter: boolean): Promise<FetchMarkdownResult> => {
     try {
         const response = await fetch(`../writings/${fileName}.md`);
         if (!response.ok) {
             console.error(`Markdown file not found: ${fileName}`);
             throw new Error(`Markdown file not found: ${fileName}`);
         }
-        const content = await response.text();
+        let content = await response.text();
+
+        if (!fetchFrontmatter) {
+            content = content.split('---').slice(2).join('---');
+        }
+
         return { content, error: null };
     } catch (error) {
         return { content: '', error: error instanceof Error ? error.message : 'An unknown error occurred' };
@@ -43,7 +48,7 @@ export const fetchMarkdownList = async (): Promise<FetchMarkdownListResult> => {
 export const fetchMarkdownDate = async (fileName: string): Promise<{ date: string | null, error: string | null }> => {
     try {
         // Use the existing fetchMarkdown function to get the content of the markdown file
-        const { content, error } = await fetchMarkdown(fileName);
+        const { content, error } = await fetchMarkdown(fileName, true);
 
         // If there was an error fetching the markdown, return the error
         if (error) {

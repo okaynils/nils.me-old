@@ -9,7 +9,7 @@ const Writing: React.FC = () => {
     // Extract fileName from URL
     const { fileName } = useParams<{ fileName: any }>();
 
-    const { markdownContent, isLoading, error } = useMarkdownService(fileName);
+    const { markdownContent, isLoading, error } = useMarkdownService(fileName, false);
 
     if (isLoading) return <p>Loading...</p>;
     if (error) return <p>Error: {error}</p>;

@@ -9,7 +9,7 @@ interface MarkdownDisplayProps {
 }
 
 const Writings: React.FC<MarkdownDisplayProps> = ({ fileName }) => {
-  const { markdownContent, isLoading, error } = useMarkdownService(fileName);
+  const { markdownContent, isLoading, error } = useMarkdownService(fileName, true);
 
   if (isLoading) return <p>Loading...</p>;
   if (error) return <p>Error: {error}</p>;
