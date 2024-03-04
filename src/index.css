@@ -24,7 +24,7 @@ body {
 }
 
 a {
-	color: inherit;
+	color: #157252;
 }
 
 a:hover {
@@ -99,7 +99,7 @@ h2 {
 	font-size: 20px;
 	line-height: 24px;
 	color: rgba(8, 8, 8, 0.8);
-	margin-bottom: 16px;
+	margin: 16px 0;
 }
 
 .link {
@@ -136,6 +136,7 @@ p {
 	font-size: 16px;
 	line-height: 24px;
 	color: rgb(24, 24, 24);
+	margin: 16px 0;
 }
 
 ul li {
@@ -257,4 +258,8 @@ a {
   .writing-link:hover {
 	color: #000;
 	background-color: #c0c0c0; /* Light grey background on hover */
+  }
+
+  .writing {
+	text-align: justify;
   }

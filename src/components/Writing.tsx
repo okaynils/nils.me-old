@@ -21,7 +21,9 @@ const Writing: React.FC = () => {
             </div>
             
             <div className="section">
-                <Markdown>{markdownContent}</Markdown>
+                <div className="writing">
+                    <Markdown>{markdownContent}</Markdown>
+                </div>
             </div>
         </div>
     );
