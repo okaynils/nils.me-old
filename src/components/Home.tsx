@@ -13,7 +13,7 @@ const Home = () => {
       <div id="content">
         <div className="section">
           <h1>Nils Fahrni</h1>
-          <h2>I am a dedicated Data Science undergraduate in my fourth semester at University of Applied Sciences Northwestern Switzerland.</h2>
+          <h2>I am a dedicated Data Science undergraduate in the fourth semester at University of Applied Sciences Northwestern Switzerland.</h2>
           <h2>I harbor a deep passion for machine learning and computer vision.</h2>
 
           <a href="https://twitter.com/okaynils" className="link"><span className="X">𝕏</span> -&gt;</a><a href="https://github.com/okaynils" className="link">GitHub -&gt;</a><a href="https://instagram.com/okaynils" className="link">Instagram -&gt;</a>
