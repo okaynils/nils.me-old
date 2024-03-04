@@ -2,12 +2,11 @@ import React from 'react';
 import '../App.css';
 import Artists from './Artists';
 import Podcasts from './Podcasts';
-import Writings from './Writings';
 import { useMarkdownListService } from '../hooks/useMarkdownListService';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
-  const { markdownFiles, dates, isLoading, error } = useMarkdownListService();
+  const { markdownFiles, dates } = useMarkdownListService();
 
   return (
     <div className="Home">
