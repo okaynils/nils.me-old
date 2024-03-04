@@ -24,7 +24,7 @@ body {
 }
 
 a {
-	color: #157252;
+	color: inherit;
 }
 
 a:hover {
@@ -136,7 +136,6 @@ p {
 	font-size: 16px;
 	line-height: 24px;
 	color: rgb(24, 24, 24);
-	margin: 16px 0;
 }
 
 ul li {
@@ -262,4 +261,12 @@ a {
 
   .writing {
 	text-align: justify;
+  }
+
+  .writing p {
+	margin: 16px 0;
+  }
+
+  .writing a {
+	color: #157252;
   }

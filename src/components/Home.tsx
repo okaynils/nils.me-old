@@ -82,11 +82,6 @@ const Home = () => {
           <h6>My favorite podcasts</h6>
           <Podcasts />
         </div>
-
-        <div className="section footer-section">
-          <p className="left-text" style={{ fontSize: "x-small" }}>Nils Fahrni © {(new Date().getFullYear())}</p>
-          <p className="right-text" style={{ fontSize: "small" }}>🌿</p>
-        </div>
       </div>
 
     </div>

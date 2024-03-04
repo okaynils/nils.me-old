@@ -13,6 +13,14 @@ function App() {
           <Route path="/writing/:fileName" element={<Writing/>} />
         </Routes>
       </BrowserRouter>
+      <div id="content">
+        <div className="section">
+          <div className="footer-section">
+              <p className="left-text" style={{ fontSize: "x-small" }}>Nils Fahrni © {(new Date().getFullYear())}</p>
+              <p className="right-text" style={{ fontSize: "small" }}>🌿</p>
+            </div>
+        </div>
+      </div>
     </div>
   );
 }

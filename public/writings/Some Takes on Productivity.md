@@ -29,7 +29,7 @@ A good alternative I've found is reviewing flashcards on my Anki deck. This acti
 only have a few minutes.
 
 ## To Optimize Sleep
-I have struggled with bed-time procrastination since middle-school until I noticed that **it's important to value sleep over extra work** in the long run because the benefits of 
+I have struggled with bedtime procrastination since middle-school until I noticed that **it's important to value sleep over extra work** in the long run because the benefits of 
 good sleep **outweigh the time it takes**.
 
 Investing time, effort, and possibly money into enhancing your sleep can have a very high return on investment. Making your sleeping environment quieter, darker, and a bit cooler 
