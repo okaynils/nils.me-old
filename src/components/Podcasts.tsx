@@ -34,7 +34,7 @@ const Podcasts = () => {
         return <div className="loading">Loading favorite podcasts...</div>;
     } else {
         return (
-            <div className="artist-box">
+            <div>
                 <div className="cover-container">
                     {podcasts.map(podcast => (
                         <div className="cover-item">
