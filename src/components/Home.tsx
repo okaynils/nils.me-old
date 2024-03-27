@@ -4,9 +4,32 @@ import Artists from './Artists';
 import Podcasts from './Podcasts';
 import { useMarkdownListService } from '../hooks/useMarkdownListService';
 import { Link } from 'react-router-dom';
+import { Globe } from 'lucide-react';
+import { useEffect, useState } from 'react';
+
 
 const Home = () => {
-  const { markdownFiles, dates } = useMarkdownListService();
+  const { markdownFiles, dates, isLoading, error } = useMarkdownListService();
+  
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  const time = new Intl.DateTimeFormat('en-US', {
+    hour: 'numeric',
+    minute: 'numeric',
+    second: 'numeric',
+    timeZone: 'Europe/Zurich',
+    hour12: false,
+  }).format(currentDate);
 
   return (
     <div className="Home">
@@ -15,8 +38,10 @@ const Home = () => {
           <h1>Nils Fahrni</h1>
           <h2>I am a dedicated Data Science undergraduate in the fourth semester at University of Applied Sciences Northwestern Switzerland.</h2>
           <h2>I harbor a deep passion for machine learning and computer vision.</h2>
-
-          <a href="https://twitter.com/okaynils" className="link"><span className="X">𝕏</span> -&gt;</a><a href="https://github.com/okaynils" className="link">GitHub -&gt;</a><a href="https://instagram.com/okaynils" className="link">Instagram -&gt;</a>
+          <div className='clock'>
+            <a href='https://www.google.com/maps/place/Solothurn'><Globe color='#545454' size={16} /><span>{time} Solothurn, Switzerland</span></a>
+          </div>
+          <a href="https://twitter.com/okaynils" className="link" target='_blank'><span className="X">𝕏</span> -&gt;</a><a href="https://github.com/okaynils" className="link" target='_blank'>GitHub -&gt;</a><a href="https://instagram.com/okaynils" className="link" target='_blank'>Instagram -&gt;</a><a href="https://drive.google.com/file/d/1BLZiOTzcqdIuM6l6qBlaQPdr5FGyntk7" className="link" target='_blank'>Resume -&gt;</a>
         </div>
 
         <div className="section">

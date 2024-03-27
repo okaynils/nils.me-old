@@ -270,3 +270,21 @@ a {
   .writing a {
 	color: #157252;
   }
+
+  .clock span {
+	padding-left: 5px;
+	font-size: 14px;
+  }
+
+  .clock {
+	display: flex;
+	align-items: center; /* This aligns children (Globe and text) vertically in the center */
+	margin: 20px 0;
+  }
+  
+  .clock a {
+	display: flex;
+	align-items: center;
+	color: #545454;
+	text-decoration: none;
+  }
