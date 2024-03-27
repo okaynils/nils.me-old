@@ -5,6 +5,12 @@ name: Deploy to Firebase Hosting on PR
 'on': pull_request
 jobs:
   build_and_preview:
+    env:
+        REACT_APP_LASTFM_API_KEY: '${{ env.REACT_APP_LASTFM_API_KEY }}'
+        REACT_APP_LASTFM_USERNAME: '${{ env.REACT_APP_LASTFM_USERNAME }}'
+        REACT_APP_LASTFM_TIME_PERIOD: '${{ env.REACT_APP_LASTFM_TIME_PERIOD }}'
+        REACT_APP_TADDY_API_KEY: '${{ env.REACT_APP_TADDY_API_KEY }}'
+        REACT_APP_TADDY_USERID: '${{ env.REACT_APP_TADDY_USERID }}'
     if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
