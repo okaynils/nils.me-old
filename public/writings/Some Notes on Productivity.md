@@ -2,7 +2,7 @@
 date: 2024-03-04
 ---
 
-# Some Takes on Productivity
+# Some Notes on Productivity
 
 This is my collection of personal takes on optimizing productivity. There are a lot of people with productivity notes on their personal websites - one of my favorite is that of 
 [Sam Altman](https://blog.samaltman.com/productivity).
@@ -29,7 +29,7 @@ A good alternative I've found is reviewing flashcards on my Anki deck. This acti
 only have a few minutes.
 
 ## To Optimize Sleep
-I have struggled with bedtime procrastination since middle-school until I noticed that **it's important to value sleep over extra work** in the long run because the benefits of 
+I have encountered bedtime procrastination since middle-school until I started to notice how impactful it is **to value sleep over extra work** in the long run because the benefits of 
 good sleep **outweigh the time it takes**.
 
 Investing time, effort, and possibly money into enhancing your sleep can have a very high return on investment. Making your sleeping environment quieter, darker, and a bit cooler 
@@ -43,3 +43,5 @@ or how it works. There are few downsides, many upsides, and it is legal and soci
 your goal should be is to not let your consumption of such drugs/supplements creep up more. I personally drink one cup of coffee a day and it's enough to feel the effects of caffeine
 for an entire afternoon. For the most effective and healthy consumption make sure to drink your first cup of coffee around **90 minutes after waking up**. Your last cup should be
 **8 hours before bedtime** to **not interrupt your sleep**.
+
+I hope you were able to take something out of these notes.

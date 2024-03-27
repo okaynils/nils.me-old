@@ -2,7 +2,6 @@ import React from 'react';
 import '../App.css';
 import Artists from './Artists';
 import Podcasts from './Podcasts';
-import Writings from './Writings';
 import { useMarkdownListService } from '../hooks/useMarkdownListService';
 import { Link } from 'react-router-dom';
 import { Globe } from 'lucide-react';
@@ -37,7 +36,7 @@ const Home = () => {
       <div id="content">
         <div className="section">
           <h1>Nils Fahrni</h1>
-          <h2>I am a dedicated Data Science undergraduate in my fourth semester at University of Applied Sciences Northwestern Switzerland.</h2>
+          <h2>I am a dedicated Data Science undergraduate in the fourth semester at University of Applied Sciences Northwestern Switzerland.</h2>
           <h2>I harbor a deep passion for machine learning and computer vision.</h2>
           <div className='clock'>
             <a href='https://www.google.com/maps/place/Solothurn'><Globe color='#545454' size={16} /><span>{time} Solothurn, Switzerland</span></a>

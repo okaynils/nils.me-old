@@ -18,7 +18,7 @@ export const useMarkdownService = (fileName: string, fetchFrontmatter: boolean) 
     };
 
     fetchAndSetMarkdown();
-  }, [fileName]);
+  }, [fileName, fetchFrontmatter]);
 
   return { markdownContent, isLoading, error };
 };
