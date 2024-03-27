@@ -3,20 +3,19 @@ import { ApolloClient, InMemoryCache } from '@apollo/client';
 import Podcast from "../viewmodels/Podcast";
 import GET_PODCASTS_QUERY from "../api/queries.taddy";
 
-const Podcasts = () => {
+const Projects = () => {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [podcasts, setPodcasts] = useState<Podcast[]>([]);
 
     useEffect(() => {
-        console.log(process.env.REACT_APP_TADDY_API_KEY!)
         const client = new ApolloClient({
             uri: 'https://api.taddy.org/',
             cache: new InMemoryCache(),
             headers: {
-                "X-API-Key": process.env.REACT_APP_TADDY_API_KEY!,
-                "X-USER-ID": process.env.REACT_APP_TADDY_USERID!
+                "X-API-Key": process.env.TADDY_API_KEY!.toString(),
+                "X-USER-ID": process.env.TADDY_USERID!.toString()
             },
         });
 
@@ -48,4 +47,4 @@ const Podcasts = () => {
     }
 }
 
-export default Podcasts;
+export default Projects;
