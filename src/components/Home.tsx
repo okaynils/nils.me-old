@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Artists from './Artists';
+import Projects from './Projects';
 import Podcasts from './Podcasts';
 import { useMarkdownListService } from '../hooks/useMarkdownListService';
 import { Link } from 'react-router-dom';
@@ -9,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 
 const Home = () => {
-  const { markdownFiles, dates, isLoading, error } = useMarkdownListService();
+  const { markdownFiles, dates } = useMarkdownListService();
   
   const [currentDate, setCurrentDate] = useState(new Date());
 
@@ -41,7 +42,10 @@ const Home = () => {
           <div className='clock'>
             <a href='https://www.google.com/maps/place/Solothurn'><Globe color='#545454' size={16} /><span>{time} Solothurn, Switzerland</span></a>
           </div>
-          <a href="https://twitter.com/okaynils" className="link" target='_blank'><span className="X">𝕏</span> -&gt;</a><a href="https://github.com/okaynils" className="link" target='_blank'>GitHub -&gt;</a><a href="https://instagram.com/okaynils" className="link" target='_blank'>Instagram -&gt;</a><a href="https://drive.google.com/file/d/1BLZiOTzcqdIuM6l6qBlaQPdr5FGyntk7" className="link" target='_blank'>Resume -&gt;</a>
+          <a href="https://twitter.com/okaynils" className="link" target="_blank" rel="noopener noreferrer"><span className="X">𝕏</span> -&gt;</a>
+          <a href="https://github.com/okaynils" className="link" target="_blank" rel="noopener noreferrer">GitHub -&gt;</a>
+          <a href="https://instagram.com/okaynils" className="link" target="_blank" rel="noopener noreferrer">Instagram -&gt;</a>
+          <a href="https://drive.google.com/file/d/1BLZiOTzcqdIuM6l6qBlaQPdr5FGyntk7" className="link" target="_blank" rel="noopener noreferrer">Resume -&gt;</a>
         </div>
 
         <div className="section">
@@ -90,6 +94,11 @@ const Home = () => {
               <p>Software Engineer Apprentice</p>
             </li>
           </ul>
+        </div>
+
+        <div className="section">
+          <h6>Projects & Classwork</h6>
+          <Projects />
         </div>
 
         <div className="section">
