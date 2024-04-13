@@ -45,6 +45,7 @@ const Home = () => {
           <a href="https://twitter.com/okaynils" className="link" target="_blank" rel="noopener noreferrer"><span className="X">𝕏</span> -&gt;</a>
           <a href="https://github.com/okaynils" className="link" target="_blank" rel="noopener noreferrer">GitHub -&gt;</a>
           <a href="https://instagram.com/okaynils" className="link" target="_blank" rel="noopener noreferrer">Instagram -&gt;</a>
+          <a href="https://www.linkedin.com/in/nilsfahrni/" className="link" target="_blank" rel="noopener noreferrer">LinkedIn -&gt;</a>
           <a href="https://drive.google.com/file/d/1BLZiOTzcqdIuM6l6qBlaQPdr5FGyntk7" className="link" target="_blank" rel="noopener noreferrer">Resume -&gt;</a>
         </div>
 
