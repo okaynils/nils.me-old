@@ -14,7 +14,7 @@ const GET_PODCASTS_QUERY = gql`
                 description
                 imageUrl
             }
-            jre: getPodcastSeries(name: "Joe Rogan Experience") {
+            jre: getPodcastSeries(name: "Dwarkesh Podcast") {
                 uuid
                 name
                 description
